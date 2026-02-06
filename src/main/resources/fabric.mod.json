@@ -3,13 +3,13 @@
 	"id": "torchcolors",
 	"version": "${version}",
 	"name": "Torch Colors",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Giving torches all 16 color options!",
 	"authors": [
-		"Me!"
+		"Kurumika!"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/kurumika/torch-colors-1.21.10"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/torchcolors/icon.png",
