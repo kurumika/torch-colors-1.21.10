@@ -18,6 +18,9 @@
 		"main": [
 			"net.kurumika.torchcolors.TorchColors"
 		],
+		"client": [
+			"net.kurumika.torchcolors.TorchColorsClient"
+		],
 		"fabric-datagen": [
 			"net.kurumika.torchcolors.TorchColorsDataGenerator"
 		]
