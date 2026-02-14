@@ -1,6 +1,20 @@
 {
-  "item.torchcolors.custom_torch_item": "Custom Torch",
+  "item.torchcolors.black_torch_item": "Black Torch",
+  "item.torchcolors.blue_torch_item": "Blue Torch",
+  "item.torchcolors.brown_torch_item": "Brown Torch",
+  "item.torchcolors.cyan_torch_item": "Cyan Torch",
+  "item.torchcolors.gray_torch_item": "Gray Torch",
+  "item.torchcolors.green_torch_item": "Green Torch",
+  "item.torchcolors.light_blue_torch_item": "Light Blue Torch",
+  "item.torchcolors.light_gray_torch_item": "Light Gray Torch",
+  "item.torchcolors.lime_torch_item": "Lime Torch",
+  "item.torchcolors.magenta_torch_item": "Magenta Torch",
+  "item.torchcolors.orange_torch_item": "Orange Torch",
+  "item.torchcolors.pink_torch_item": "Pink Torch",
+  "item.torchcolors.purple_torch_item": "Purple Torch",
+  "item.torchcolors.red_torch_item": "Red Torch",
   "item.torchcolors.white_torch_item": "White Torch",
+  "item.torchcolors.yellow_torch_item": "Yellow Torch",
 
   "itemgroup.torchcolors.torch_items": "Torch Colors"
 }

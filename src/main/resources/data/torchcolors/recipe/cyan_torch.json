@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:cyan_dye",
+    "X": [
+      "minecraft:torch",
+      "torchcolors:black_torch_item",
+      "torchcolors:blue_torch_item",
+      "torchcolors:brown_torch_item",
+      "torchcolors:green_torch_item",
+      "torchcolors:gray_torch_item",
+      "torchcolors:light_blue_torch_item",
+      "torchcolors:light_gray_torch_item",
+      "torchcolors:lime_torch_item",
+      "torchcolors:magenta_torch_item",
+      "torchcolors:orange_torch_item",
+      "torchcolors:pink_torch_item",
+      "torchcolors:purple_torch_item",
+      "torchcolors:red_torch_item",
+      "torchcolors:white_torch_item",
+      "torchcolors:yellow_torch_item"
+    ]
+  },
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "result": {
+    "count": 8,
+    "id": "torchcolors:cyan_torch_item"
+  }
+}

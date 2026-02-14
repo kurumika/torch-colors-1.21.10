@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "torchcolors:item/red_torch_item"
+  }
+}
