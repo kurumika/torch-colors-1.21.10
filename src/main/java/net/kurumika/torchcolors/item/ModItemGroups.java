@@ -13,6 +13,7 @@ public class ModItemGroups {
     public static final ItemGroup TORCH_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(TorchColors.MOD_ID, "torch_items"), FabricItemGroup.builder()
             .icon(() -> new ItemStack(ModItems.CUSTOM_TORCH_ITEM)).displayName(Text.translatable("itemgroup.torchcolors.torch_items")).entries((displayContext, entries) -> {
                 entries.add(ModItems.CUSTOM_TORCH_ITEM);
+                entries.add(ModItems.WHITE_TORCH_ITEM);
             }).build());
     public static void registerItemGroups() {
         TorchColors.LOGGER.info("Registering Item Groups for " + TorchColors.MOD_ID);

@@ -2,10 +2,8 @@ package net.kurumika.torchcolors.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kurumika.torchcolors.TorchColors;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.TorchBlock;
-import net.minecraft.block.WallTorchBlock;
+import net.kurumika.torchcolors.particle.ModParticles;
+import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -22,12 +20,21 @@ public class ModBlocks {
 
     public static final Block CUSTOM_TORCH = registerBlock(
             "custom_torch", new TorchBlock(
-                    ParticleTypes.FLAME, AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> 14).emissiveLighting((state, world, pos) -> true).sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TorchColors.MOD_ID, "custom_torch")))
+                    ModParticles.CUSTOM_FLAME, AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> 14).emissiveLighting((state, world, pos) -> true).sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TorchColors.MOD_ID, "custom_torch")))
             ));
     public static final Block CUSTOM_WALL_TORCH = registerBlock(
             "custom_wall_torch", new WallTorchBlock(
-                    ParticleTypes.FLAME, AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> 14).emissiveLighting((state, world, pos) -> true).sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TorchColors.MOD_ID, "custom_wall_torch")))
+                    ModParticles.CUSTOM_FLAME, AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> 14).emissiveLighting((state, world, pos) -> true).sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TorchColors.MOD_ID, "custom_wall_torch")))
             ));
+    public static final Block WHITE_TORCH = registerBlock(
+            "white_torch", new TorchBlock(
+                    ParticleTypes.FLAME, AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> 14).emissiveLighting((state, world, pos) -> true).sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TorchColors.MOD_ID, "white_torch")))
+            ));
+    public static final Block WHITE_WALL_TORCH = registerBlock(
+            "white_wall_torch", new WallTorchBlock(
+                    ParticleTypes.FLAME, AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> 14).emissiveLighting((state, world, pos) -> true).sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TorchColors.MOD_ID, "white_wall_torch")))
+            ));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(TorchColors.MOD_ID, name), block);
@@ -44,6 +51,8 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
             entries.add(ModBlocks.CUSTOM_TORCH);
             entries.add(ModBlocks.CUSTOM_WALL_TORCH);
+            entries.add(ModBlocks.WHITE_TORCH);
+            entries.add(ModBlocks.WHITE_WALL_TORCH);
         });
     }
 }

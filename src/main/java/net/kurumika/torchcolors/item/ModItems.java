@@ -17,6 +17,8 @@ public class ModItems {
 
     public static final Item CUSTOM_TORCH_ITEM = registerItem("custom_torch_item", new VerticallyAttachableBlockItem(ModBlocks.CUSTOM_TORCH, ModBlocks.CUSTOM_WALL_TORCH, Direction.DOWN, new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(TorchColors.MOD_ID,"custom_torch_item")))));
 
+    public static final Item WHITE_TORCH_ITEM = registerItem("white_torch_item", new VerticallyAttachableBlockItem(ModBlocks.WHITE_TORCH, ModBlocks.WHITE_WALL_TORCH, Direction.DOWN, new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(TorchColors.MOD_ID,"white_torch_item")))));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TorchColors.MOD_ID, name), item);
     }
@@ -26,6 +28,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
             entries.add(ModItems.CUSTOM_TORCH_ITEM);
+            entries.add(ModItems.WHITE_TORCH_ITEM);
         });
     }
 }

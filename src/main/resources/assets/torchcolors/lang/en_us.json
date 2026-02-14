@@ -1,5 +1,6 @@
 {
   "item.torchcolors.custom_torch_item": "Custom Torch",
+  "item.torchcolors.white_torch_item": "White Torch",
 
   "itemgroup.torchcolors.torch_items": "Torch Colors"
 }
